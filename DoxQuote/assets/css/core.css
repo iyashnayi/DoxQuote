@@ -1,0 +1,138 @@
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+.label{
+  font-size: 30px;
+  color:black;
+}
+.active-nav{
+  width: 260px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #E3F2FD;
+}
+.back-pro-card{
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  padding: 7px;
+}
+.online-circle{
+  width: 50px;
+  height: 50px;
+  background-color: #8BC34A;
+  border-radius: 50%;
+}
+.nav-cap{
+  font-size: 16px;
+  text-transform:capitalize;
+}
+.justify-quote{
+  text-align: justify;
+  /*text-justify: inner-word;*/
+}
+.moveable{
+  left: 0px;
+  padding: 15px; 
+  transition-duration: 0.7s;
+}
+.moveable:hover{
+  transition-duration: 0.7s;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+}
+.menu-content{
+  color:black;
+  background-color: transparent;
+}
+.menu-content:hover{
+  color:black;
+  background-color: #E3F2FD;
+}
+.float-right-date{
+  float: right;
+}
+.name-size{
+  font-size: 17px;
+}
+.email-size{
+  font-size: 13px;
+}
+.text-black{
+  color:black;
+  font-variant-caps: titling-case;
+}
+.text-gradient:hover{
+  font-variant-caps: titling-caps;
+  background: -webkit-linear-gradient(#2196F3, #3F51B5, #021B79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo-card{
+  padding-left: 40px;
+}
+.main-logo-head{
+  /*empty*/
+}
+.search{
+  font-size: 21px;
+}
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.animate-logo{
+  width: 20%;
+  transition-duration: 0.5s;
+}
+.animate-logo:hover{
+  width: 30%;
+  transition-duration: 0.5s;
+}
+.text-gray {
+  color: #aaa;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
